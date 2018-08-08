@@ -1,0 +1,139 @@
+body, html {
+	width: 100%;
+	min-width: 1500px;
+	height: 100%;
+	min-height: 1000px;
+
+	background: #fff9f2;
+	color: rgb(68, 68, 68);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+
+}
+a:hover{
+	background-color: #fff9f2;
+	color: rgb(68, 68, 68);
+	
+
+}
+
+.wrapper {
+	width: 1400px;
+	height: 900px;
+	padding-left: 200px;
+}
+
+.header {
+	border: black 2px groove;
+	margin-left: 10px; 
+	margin-right: 10px;
+	margin-top: 10px;
+	line-height: 10px;
+	height: 140px;
+	background-color: rgb(204, 204, 204);
+
+}
+
+.logo-container {
+    height: 100%;
+    width: 400px;
+}
+.logo-container .logo-image {
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 20px;
+	float: left;
+}
+.logo-container .logo-textarea  {	
+    display: inline-block;
+    margin-top: 15px;
+}
+.logo-container .logo-textarea .logo-text {
+	margin: 0;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+.menu {
+	background: rgb(56, 56, 56);
+	color: white;
+	font-size: 25px;
+	height: 45px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.menu .menu-list {
+	display: flex;
+	height: 100%;
+	position: relative;
+	flex-direction: row;
+	list-style: none;
+	border: 1px solid rgb(56, 56, 56);
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.menu-list .menu-item:hover + .sub-menu-container,
+.menu-list .sub-menu-container:hover {
+	display: block;
+}
+
+.menu-list .menu-item .link {
+	display: block;
+    height: 100%;
+    padding: 0 15px;
+    line-height: 35px;
+}
+.menu-list .sub-menu-container {
+	position: absolute;
+	display: none;
+    padding-top: 40px;
+    top: 45px;
+    left: 15px;
+    width: 390px;
+}
+.menu-list .sub-menu-container .sub-menu {
+	background-color: rgb(56, 56, 56);
+}
+.menu-list .sub-menu-container .link {
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.content {
+	margin-left: 10px; 
+	margin-right: 10px;
+	margin-top: 10px;
+	height: 700px;
+}
+ 
+ .content .block {
+ 	background: rgb(204, 204, 204);
+ 	height: 700px;
+ 	width: 420px;
+ 	float: left;
+ 	margin-right: 30px;
+ }
+
+.content .text {
+	font-size: 20px;
+	height: 700px;
+	line-height: 25px;
+	margin-left: 400px;
+	letter-spacing: 1px;
+	margin-right: 10px;
+}
+
+.footer {
+	margin-left: 10px; 
+	margin-right: 10px;
+
+	height: 50px;
+	background:rgb(56, 56, 56); 
+}
