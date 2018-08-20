@@ -80,7 +80,7 @@ a:hover{
 
 .menu-list .menu-item:hover + .sub-menu-container,
 .menu-list .sub-menu-container:hover {
-	display: block;
+
 }
 
 .menu-list .menu-item .link {
@@ -91,7 +91,7 @@ a:hover{
 }
 .menu-list .sub-menu-container {
 	position: absolute;
-	display: none;
+	display: block;
     padding-top: 40px;
     top: 45px;
     left: 15px;

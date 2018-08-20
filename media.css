@@ -1,0 +1,115 @@
+@media only screen and (min-width: 600px) {
+	body {
+		background: #fff9f2;
+		color: rgb(68, 68, 68);
+	}
+
+	.wrapper {
+		width: 100%;
+        margin: 0 auto;
+	}
+	.header {
+		border: black 2px groove;
+		margin-left: 10px; 
+		margin-right: 10px;
+		margin-top: 10px;
+		line-height: 10px;
+		height: 140px;
+		background-color: rgb(204, 204, 204);
+        display: none;
+	}
+ 
+    .logo-container .logo-image {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 20px;
+        float: left;
+    }
+    .logo-container .logo-textarea  {	
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .logo-container .logo-textarea .logo-text {
+        margin: 0;
+        line-height: 30px;
+        font-weight: normal;
+    }
+    .menu {
+        /* background: rgb(56, 56, 56);
+        color: white; */
+        font-size: 25px;
+        /* height: 45px; */
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .menu .nav-menu {
+        padding: 25px;
+        display: inline-block;
+        background: rgb(56, 56, 56);
+        color: white;
+
+    }
+    .menu .nav-menu .link {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .menu:hover .menu-list  {
+        display: inline-block;
+        line-height: 30px;
+        background: rgb(56, 56, 56);
+        color: white;
+        text-decoration: none;
+        position: absolute;
+       
+    }
+    .menu .menu-list .link {
+        text-decoration: none;
+        color: #ffffff;
+        background: rgb(56, 56, 56);
+        display: inline-block;
+
+    }
+    .menu .menu-list .link:hover {
+        background: #ffffff;
+        color: rgb(56, 56, 56);
+        width: 100%;
+    }
+    .menu .menu-list {
+        display: none;
+
+    }
+    
+    .content {
+        margin-left: 10px; 
+        margin-right: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+     .block {
+        background: red;
+        padding: 25px;
+        display: inline-block;
+     }
+   
+    
+    .content .text {
+        font-size: 20px;
+       padding-bottom: 15px;
+        line-height: 25px;
+        
+        letter-spacing: 1px;
+        margin-right: 10px;
+    }
+    
+    .footer {
+        margin-left: 10px; 
+        margin-right: 10px;
+    
+        height: 50px;
+        background:rgb(56, 56, 56); 
+}
+@media screen and (max-width:800px) {
+    
+}
