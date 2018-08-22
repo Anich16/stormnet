@@ -1,0 +1,355 @@
+body {
+    background: #ffffff;
+    width: 600px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+.header {
+	border: 2px #000000 solid;
+    margin-top: 10px;
+    background-color: #cccccc;
+    display: none;
+    flex-direction: row;
+}
+.header .logo-image {
+    padding: 15px;
+}
+.header .logo-textarea {   
+   padding-top: 35px;
+}
+.header .logo-textarea .logo-text {
+    display: block;
+    color: #696969;
+    font-size: 30px;
+    line-height: 30px;
+}
+.header .logo-textarea .description {
+    line-height: 25px;
+    font-size: 20px;
+    color: #696969;
+}
+.swich {
+	display: inline-block;
+	position: relative;
+}
+.swich .swich-menu {
+	display: block;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	background: #383838;
+	padding: 25px;
+	transform: none;
+	
+}
+
+.menu {
+  background: #383838;
+ display: none;
+  border: none;
+  border-top: none;
+  position: absolute;
+  width: 50%;
+
+
+}
+
+.menu .menu-list {
+    display: block;
+  
+    list-style: none;
+    letter-spacing: 1px;
+    
+    background: #383838;
+    /*position: absolute;
+    top: 7%;*/
+    width: 50%;
+    
+}
+.swich:hover +
+ .menu {
+	display: block;
+
+}
+
+}
+.menu .menu-list .menu-item {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+.menu .menu-list .menu-item .link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+
+}
+
+.menu .menu-list .menu-item .link:hover {
+    display: block;
+    background: #ffffff;
+    color: #696969;
+    border-bottom: none;
+    
+}
+.content {
+	margin-top: 10px;
+	height: auto;
+}
+.content .sub-menu-container {
+   display: none;
+   background: #cccccc;
+   height: 92%;
+   padding: 25px 25px 0 25px;
+   float: left;
+}
+.content .sub-menu-container .link{
+    font-size: 25px;
+    line-height: 30px;
+    background: #3b3b3b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.content .sub-menu-container .link:hover {
+    background: #ffffff;
+    text-decoration: underline;
+    color: #696969;
+}
+.content .news {
+	margin-left: 0;
+	letter-spacing: 1px;
+}
+.content .news .new {
+    background: #cccccc;
+    margin: 15px 0;
+   
+}
+.content .news .new .image {
+    padding: 15px 0; 
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.content .news .new .title {
+    padding: 0px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+
+}
+.content .news .new .description {
+    font-size: 14px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    line-height: 20px;
+    display: flex;
+    text-align: center;
+    padding-left: 25px;
+
+}
+
+.footer {   
+    height: 25px;
+    background: #3b3b3b; 
+    margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 800px) {
+	body {
+		width: 800px;
+	
+	}
+	.content {
+		margin-top: 0px;
+		height: 700px;
+	}
+	.content .sub-menu-container {
+   display: block;
+   background: #cccccc;
+   height: 92%;
+   padding: 10px 10px 0;
+   float: left;
+   width: 115px;
+}
+.content .sub-menu-container .link {
+    font-size: 20px;
+    line-height: 25px;
+    background: #3b3b3b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.content .sub-menu-container .link:hover {
+    background: #ffffff;
+    text-decoration: underline;
+    color: #696969;
+}
+	.content .news {
+	margin-left: 145px;
+	letter-spacing: 1px;
+}
+.content .news .new {
+    background: #cccccc;
+    margin: 15px 0;
+   
+}
+.content .news .new .image {
+    padding: 35px 10px; 
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.content .news .new .title {
+    padding: 5px 15px;
+    font-size: 22px;
+    text-align: left;
+    display: inline-block;
+}
+.content .news .new .description {
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    line-height: 20px;
+    display: flex;
+    text-align: left;
+    padding-left: 15px;
+
+}
+
+.footer {   
+    height: 35px;
+    background: #3b3b3b; 
+    margin-bottom: 50px;
+}
+
+	
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		width: 1024px;
+	}
+	.header {
+		display: flex;
+
+	}
+	.swich {
+	display: none;
+	position: relative;
+	}
+	.menu {
+
+  display: block;
+  border: 2px solid #000000;
+  border-top: none;
+  position: static;
+  width: 100%;
+
+
+}
+
+.menu .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    /*position: absolute;
+    top: 7%;*/
+  
+    
+}
+.menu .menu-list .menu-item {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+.menu .menu-list .menu-item .link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    /*height: 100%;*/
+   /* display: block;*/
+}
+
+.menu .menu-list .menu-item .link:hover {
+    display: block;
+    background: #ffffff;
+    color: #696969;
+    border-bottom: none;
+    
+}
+.content {
+		margin-top: 10px;
+		height: 1185px;
+	}
+	.content .sub-menu-container {
+   display: inline-block;
+  
+   padding: 25px 25px 0 25px;
+   float: left;
+   width: auto;
+}
+.content .sub-menu-container .link {
+    font-size: 25px;
+    line-height: 30px;
+    
+    text-align: center;
+}
+
+	.content .news {
+	margin-left: 400px;
+	letter-spacing: 1px;
+}
+
+.content .news .new .image {
+    padding: 125px 25px; 
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.content .news .new .title {
+    padding: 15px 15px;
+    font-size: 25px;
+    
+}
+.content .news .new .description {
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    line-height: 30px;
+    
+
+}
+
+.footer {   
+    height: 50px;
+    
+}
+
+
+}
