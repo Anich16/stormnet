@@ -1,139 +1,139 @@
-body, html {
-	width: 100%;
-	min-width: 1500px;
-	height: 100%;
-	min-height: 1000px;
-
-	background: #fff9f2;
-	color: rgb(68, 68, 68);
+body {
+    background: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
 }
 
-a {
-	color: white;
-	text-decoration: none;
 
-}
-a:hover{
-	background-color: #fff9f2;
-	color: rgb(68, 68, 68);
-	
-
-}
-
-.wrapper {
-	width: 1400px;
-	height: 900px;
-	padding-left: 200px;
-}
 
 .header {
-	border: black 2px groove;
-	margin-left: 10px; 
-	margin-right: 10px;
-	margin-top: 10px;
-	line-height: 10px;
-	height: 140px;
-	background-color: rgb(204, 204, 204);
+    border: 2px #000000 solid;
+    margin-top: 10px;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: row;
 
 }
 
-.logo-container {
-    height: 100%;
-    width: 400px;
+.header .logo-image {
+    padding: 15px;
 }
-.logo-container .logo-image {
-	margin-top: 15px;
-	margin-left: 15px;
-	margin-right: 20px;
-	float: left;
+.header .logo-textarea {   
+   padding-top: 35px;
 }
-.logo-container .logo-textarea  {	
-    display: inline-block;
-    margin-top: 15px;
+.header .logo-textarea .logo-text {
+    display: block;
+    color: #696969;
+    font-size: 30px;
+    line-height: 30px;
 }
-.logo-container .logo-textarea .logo-text {
-	margin: 0;
-	line-height: 30px;
-	font-weight: normal;
+.header .logo-textarea .description {
+    line-height: 25px;
+    font-size: 20px;
+    color: #696969;
 }
 
 .menu {
-	background: rgb(56, 56, 56);
-	color: white;
-	font-size: 25px;
-	height: 45px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-left: 10px;
+  background: #383838;
+ 
+  border: 2px solid #000000;
+  border-top: none;
 }
 
 .menu .menu-list {
-	display: flex;
-	height: 100%;
-	position: relative;
-	flex-direction: row;
-	list-style: none;
-	border: 1px solid rgb(56, 56, 56);
-    letter-spacing: 1px;
-    margin-top: 0;
-}
-
-.menu-list .menu-item:hover + .sub-menu-container,
-.menu-list .sub-menu-container:hover {
-
-}
-
-.menu-list .menu-item .link {
-	display: block;
-    height: 100%;
-    padding: 0 15px;
-    line-height: 35px;
-}
-.menu-list .sub-menu-container {
-	position: absolute;
-	display: block;
-    padding-top: 40px;
-    top: 45px;
-    left: 15px;
-    width: 390px;
-}
-.menu-list .sub-menu-container .sub-menu {
-	background-color: rgb(56, 56, 56);
-}
-.menu-list .sub-menu-container .link {
-	display: block;
-	text-align: center;
-	padding: 10px 0;
-}
-
-.content {
-	margin-left: 10px; 
-	margin-right: 10px;
-	margin-top: 10px;
-	height: 700px;
-}
+    display: flex;
+    
  
- .content .block {
- 	background: rgb(204, 204, 204);
- 	height: 700px;
- 	width: 420px;
- 	float: left;
- 	margin-right: 30px;
- }
+    list-style: none;
+    letter-spacing: 1px;
+    justify-content: space-around;
+}
+.menu .menu-list .menu-item {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 
-.content .text {
-	font-size: 20px;
-	height: 700px;
-	line-height: 25px;
-	margin-left: 400px;
-	letter-spacing: 1px;
-	margin-right: 10px;
+}
+.menu .menu-list .menu-item .link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    /*height: 100%;*/
+   /* display: block;*/
 }
 
-.footer {
-	margin-left: 10px; 
-	margin-right: 10px;
+.menu .menu-list .menu-item .link:hover {
+    display: block;
+    background: #ffffff;
+    color: #696969;
+    border-bottom: none;
+    
+}
+.content {
+    margin-top: 10px;
+    height: 900px;
+}
 
-	height: 50px;
-	background:rgb(56, 56, 56); 
+.content .sub-menu-container {
+   display: inline-block;
+   background: #cccccc;
+   height: 92%;
+   padding: 25px 25px 0 25px;
+   float: left;
+}
+
+.content .sub-menu-container .link{
+    font-size: 25px;
+    line-height: 30px;
+    background: #3b3b3b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.content .sub-menu-container .link:hover {
+    background: #ffffff;
+    text-decoration: underline;
+    color: #696969;
+}
+
+.content .news {
+
+    margin-left: 400px;
+    letter-spacing: 1px;
+
+}
+.content .news .new {
+    background: #cccccc;
+    margin: 15px 0;
+   
+}
+.content .news .new .image {
+    padding: 60px 25px; 
+    float: left;
+}
+.content .news .new .title {
+    padding-top: 20px;
+    font-size: 25px;
+}
+.content .news .new .description {
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    line-height: 30px;
+    display: flex;
+
+}
+
+.footer {   
+    height: 50px;
+    background: #3b3b3b; 
+    margin-bottom: 50px;
 }
